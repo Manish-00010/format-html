@@ -1,0 +1,169 @@
+@media (max-width: 575.98px) {
+  .otherLinks {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+}
+
+/* Mobile menu hidden by default */
+@media (max-width: 991px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  #navMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100vh;
+    width: 75%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+    padding: 80px 20px;
+  }
+  
+
+  #navMenu.show {
+    transform: translateX(0);
+  }
+
+  #navMenu ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .logo,
+  .otherLinks {
+    z-index: 0;
+  }
+  .otherLinks {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1025.98px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2.medium {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #303030;
+  }
+
+  p.medium {
+    font-size: 16px;
+  }
+
+  p.small {
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .container {
+    max-width: 85%;
+  }
+  header ul li a {
+    margin: 0;
+  }
+
+  header ul {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1025.98px) and (max-width: 1400px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2.medium {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #303030;
+  }
+
+  p.medium {
+    font-size: 14px;
+  }
+
+  p.small {
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 95%;
+  }
+}

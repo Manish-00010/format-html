@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* <<============== Brown Fonts ==============>>  */
+
+@font-face {
+  font-family: "Brown";
+  src: url("./fonts/Brown-Regular.woff2") format("woff2"),
+    url("./fonts/Brown-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownExtraBoldCondensed";
+  src: url("./fonts/BrownExtraBoldCondensed.woff2") format("woff2"),
+    url("./fonts/BrownExtraBoldCondensed.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownExtraBold";
+  src: url("./fonts/BrownExtraBold.woff2") format("woff2"),
+    url("./fonts/BrownExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownBoldItalic";
+  src: url("./fonts/BrownBoldItalic.woff2") format("woff2"),
+    url("./fonts/BrownBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownItalic";
+  src: url("./fonts/BrownItalic.woff2") format("woff2"),
+    url("./fonts/BrownItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownMedium";
+  src: url("./fonts/BrownMedium.woff2") format("woff2"),
+    url("./fonts/BrownMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownMedium";
+  src: url("./fonts/BrownMediumItalic.woff2") format("woff2"),
+    url("./fonts/BrownMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownHeavy";
+  src: url("./fonts/BrownHeavy.woff2") format("woff2"),
+    url("./fonts/BrownHeavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownLight";
+  src: url("./fonts/BrownLight.woff2") format("woff2"),
+    url("./fonts/BrownLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownLight";
+  src: url("./fonts/BrownLightItalic.woff2") format("woff2"),
+    url("./fonts/BrownLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownBold";
+  src: url("./fonts/BrownBold.woff2") format("woff2"),
+    url("./fonts/BrownBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Brown";
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Preloader Styling */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 10px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff0080, #ff8c00);
+  border-radius: 5px;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.bar:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+#preloader h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out infinite;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2);
+  }
+}
+
+@keyframes fadeIn {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* <<============== Fonts Sizes ==============>>  */
+
+h1 {
+  font-size: 75px;
+}
+
+h2.medium {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #303030;
+}
+
+p.medium {
+  font-size: 16px;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* <<============== Header CSS ==============>>  */
+#menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* black with opacity */
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+#menuOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+header {
+  position: relative;
+  background-color: #fff;
+  padding: 18px 0;
+  align-self: center;
+  box-shadow: 0 0 10px #3030303f;
+}
+
+header ul {
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li a {
+  color: #303030bd;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 10px 0 10px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 150;
+  transform: translateY(-50%);
+}
+
+.mobile-menu-toggle span {
+  height: 3px;
+  width: 40px;
+  background: #303030;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.mobile-menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 5px);
+}
+
+.mobile-menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+header.fixed {
+  position: fixed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 130;
+  width: 100%;
+  background-color: #ffffffc4;
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid #fff;
+  top: 0;
+}
+
+/* <<============== arrow Detail CSS ==============>>  */
+.custom-arrows .slick-arrow {
+  position: inherit !important;
+  bottom: 0;
+  top: inherit;
+}
+
+.custom-arrows .slick-arrow::before {
+  content: inherit;
+}
+
+.custom-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.custom-arrows .slick-prev,
+.custom-arrows .slick-next {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-arrows img {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-arrows .slick-next,
+.custom-arrows .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  -webkit-transform: inherit;
+  -ms-transform: inherit;
+  transform: inherit;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
